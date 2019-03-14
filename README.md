@@ -94,3 +94,7 @@ We'll begin using these globals as we go through the project. Don't worry too mu
 ### src/scenes/MainScene.js
 
 This will be the main hub of our game logic. Scenes in Phaser are populated with references to most of Phaser's API functions. Here we will be able to add game objects to our scene, set up physics collisions, and more.
+
+### src/gameObjects/Donut.js
+
+This is our main player character, the Flappy Donut™️. This class leverages the Sprite game object which is a core component to most Phaser games.

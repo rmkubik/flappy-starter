@@ -17,7 +17,9 @@ class MainScene extends Phaser.Scene {
    * Scene lifecycle method, preload().
    * This method is used to load and register assets into our game.
    */
-  preload() {}
+  preload() {
+    // We'll implement this later
+  }
 
   /**
    * Scene lifecycle method, create().
@@ -28,7 +30,7 @@ class MainScene extends Phaser.Scene {
     /**
      * Add a text Game Object to our Scene.
      *
-     * parameters:
+     * arguments:
      * - x location in pixels
      * - y location in pixels
      * - text to be displayed
@@ -39,10 +41,10 @@ class MainScene extends Phaser.Scene {
   }
 
   /**
-   * Set up input handling events so our game can respond to player inputs
+   * Set up input handling events so our game can respond to player inputs.
    */
   createPlayerInputs() {
-    // A custom function we will implement later
+    // We'll implement this later
   }
 
   /**
@@ -50,7 +52,9 @@ class MainScene extends Phaser.Scene {
    * This method is used to make changes as the game progresses.
    * It is called when the Scene runs an update step.
    */
-  update() {}
+  update() {
+    // We'll implement this later
+  }
 }
 
 export default MainScene;
