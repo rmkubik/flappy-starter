@@ -11,7 +11,6 @@ import globals from "../globals";
  */
 class Donut extends Phaser.GameObjects.Sprite {
   /**
-   *
    * @param {object} configuration
    * @param {Phaser.Scene} configuration.scene - the Phaser.Scene that owns this Sprite
    * @param {object} configuration.position

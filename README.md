@@ -98,3 +98,21 @@ This will be the main hub of our game logic. Scenes in Phaser are populated with
 ### src/gameObjects/Donut.js
 
 This is our main player character, the Flappy Donut™️. This class leverages the Sprite game object which is a core component to most Phaser games.
+
+### src/gameObjects/Pipes.js
+
+This class will manage all of the Pipe obstacles in our game. It will handle the creation of new pipes and the destruction of old pipes that have left the screen. This class leverages the Group game object which is useful in managing a large number of similar types of game objects.
+
+### src/assetes/donuts.png
+
+This is the compiled spritesheet we will be using to create the Sprites in our game.
+
+### src/assetes/donuts.pyxel
+
+This is the raw Pyxel Edit project I used to create the sprites used in this game.
+
+## Reference Material
+
+### Game Objects
+
+This article explains how Game Objects work in Phaser: https://phaser.io/phaser3/contributing/part6
