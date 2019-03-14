@@ -4,6 +4,14 @@ import donutSpriteSheet from "../../assets/donuts.png";
 import Donut from "../gameObjects/Donut";
 import Pipes from "../gameObjects/Pipes";
 
+/**
+ * MainScene extends Phaser.Scene
+ * https://photonstorm.github.io/phaser3-docs/Phaser.Scene.html
+ *
+ * In depth usage dev logs:
+ * Part 1: https://phaser.io/phaser3/devlog/119
+ * Part 2: https://phaser.io/phaser3/devlog/121
+ */
 class MainScene extends Phaser.Scene {
   /**
    * Scene lifecycle method, preload().
