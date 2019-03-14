@@ -90,3 +90,7 @@ This file contains the Phaser configuration object we're using to instantiate ou
 Globals are variables that we're going to use repeatedly in various parts of our project. We want to use a single reference in this file instead of hard coding the numbers everywhere they're used. This lets us update the whole project in one place if a number needs to change.
 
 We'll begin using these globals as we go through the project. Don't worry too much about how they'll be used yet.
+
+### src/scenes/MainScene.js
+
+This will be the main hub of our game logic. Scenes in Phaser are populated with references to most of Phaser's API functions. Here we will be able to add game objects to our scene, set up physics collisions, and more.
