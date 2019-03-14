@@ -87,4 +87,6 @@ This file contains the Phaser configuration object we're using to instantiate ou
 
 ### src/globals.js
 
-This file contains the Phaser configuration object we're using to instantiate our game. Each option is explained in the file.
+Globals are variables that we're going to use repeatedly in various parts of our project. We want to use a single reference in this file instead of hard coding the numbers everywhere they're used. This lets us update the whole project in one place if a number needs to change.
+
+We'll begin using these globals as we go through the project. Don't worry too much about how they'll be used yet.
