@@ -39,6 +39,13 @@ class MainScene extends Phaser.Scene {
   }
 
   /**
+   * Set up input handling events so our game can respond to player inputs
+   */
+  createPlayerInputs() {
+    // A custom function we will implement later
+  }
+
+  /**
    * Scene lifecycle method, update().
    * This method is used to make changes as the game progresses.
    * It is called when the Scene runs an update step.
