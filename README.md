@@ -77,37 +77,37 @@ flappy-starter
 └── index.js
 ```
 
-### index.js
+**index.js**
 
 This is the entry point to our project. Most of the code in this file can be ignored because it is unrelated to Phaser. The code has been commented in that file to illustrate its purpose.
 
-### src/config.js
+**src/config.js**
 
 This file contains the Phaser configuration object we're using to instantiate our game. Each option is explained in the file.
 
-### src/globals.js
+**src/globals.js**
 
 Globals are variables that we're going to use repeatedly in various parts of our project. We want to use a single reference in this file instead of hard coding the numbers everywhere they're used. This lets us update the whole project in one place if a number needs to change.
 
 We'll begin using these globals as we go through the project. Don't worry too much about how they'll be used yet.
 
-### src/scenes/MainScene.js
+**src/scenes/MainScene.js**
 
 This will be the main hub of our game logic. Scenes in Phaser are populated with references to most of Phaser's API functions. Here we will be able to add game objects to our scene, set up physics collisions, and more.
 
-### src/gameObjects/Donut.js
+**src/gameObjects/Donut.js**
 
 This is our main player character, the Flappy Donut™️. This class leverages the Sprite game object which is a core component to most Phaser games.
 
-### src/gameObjects/Pipes.js
+**src/gameObjects/Pipes.js**
 
 This class will manage all of the Pipe obstacles in our game. It will handle the creation of new pipes and the destruction of old pipes that have left the screen. This class leverages the Group game object which is useful in managing a large number of similar types of game objects.
 
-### src/assetes/donuts.png
+**src/assetes/donuts.png**
 
 This is the compiled spritesheet we will be using to create the Sprites in our game.
 
-### src/assetes/donuts.pyxel
+**src/assetes/donuts.pyxel**
 
 This is the raw Pyxel Edit project I used to create the sprites used in this game.
 
