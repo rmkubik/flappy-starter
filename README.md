@@ -1,6 +1,10 @@
-# Flappy Donut Tutorial
+# Flappy Donut Workshop
+
+Build a game with the JavaScript game development framework [Phaser](https://phaser.io/)!
 
 This starter repository accompanies a short workshop session that I give in person. It may be useful outside of that context, but it is primarily tailored for that experience.
+
+This tutorial uses Phaser 3. There is also a Phaser Community Edition, referred to as Phaser CE or Phaser 2. You'll find references to both versions. Make sure to check that a reference material is related to the right version of Phaser!
 
 ## Getting Set Up
 
@@ -45,3 +49,42 @@ The first task we need to achieve is getting this starter project up and running
    ```
 
    This should cause some text to appear in your terminal indicating the starter project is building. After a few seconds it should should you a URL that looks something like [http://localhost:1234](http://localhost:1234). If you navigate to this address in your browser of choice, you should see a black screen with the text "Flappy Donut".
+
+## Starter Project Architecture
+
+Let's explore the basic setup of our Phaser starter project.
+
+This is a map of all the files in our starter project that are relevant to this workshop. The files that have been omitted from this diagram are related to various developer tools.
+
+```
+flappy-starter
+│
+├── assets
+│   ├── donuts.png
+│   └── donuts.pyxel
+│
+├── src
+│   ├── gameObjects
+│   │   ├── Donut.js
+│   │   └── Pipes.js
+│   │
+│   ├── scenes
+│   │   └── MainScene.js
+│   │
+│   ├── config.js
+│   └── globals.js
+│
+└── index.js
+```
+
+### index.js
+
+This is the entry point to our project. Most of the code in this file can be ignored because it is unrelated to Phaser. The code has been commented in that file to illustrate its purpose.
+
+### src/config.js
+
+This file contains the Phaser configuration object we're using to instantiate our game. Each option is explained in the file.
+
+### src/globals.js
+
+This file contains the Phaser configuration object we're using to instantiate our game. Each option is explained in the file.

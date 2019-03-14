@@ -2,6 +2,13 @@ import Phaser from "phaser";
 import config from "./src/config";
 import globals from "./src/globals";
 
+/*
+ * Create a new Phaser.Game instance with our config object. Phaser
+ * takes these config options to build a game in a targeted DOM element.
+ *
+ * We need to save a reference to gameEl in order to apply the styling
+ * and enable Parcel hot module reloading as well.
+ */
 const gameEl = document.querySelector(`#${config.parent}`);
 const game = new Phaser.Game(config);
 
@@ -25,7 +32,7 @@ gameEl.setAttribute(
 );
 
 /**
- * Enable Parcel hot loading
+ * Enable Parcel hot module reloading
  */
 if (module.hot) {
   module.hot.accept(() => {
