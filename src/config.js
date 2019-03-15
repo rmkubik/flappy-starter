@@ -37,7 +37,8 @@ const config = {
   /**
    * Fixes all rendered assets to a pixel perfect grid
    */
-  pixelArt: true
+  pixelArt: true,
+  backgroundColor: "#7ec0ee"
 };
 
 export default config;

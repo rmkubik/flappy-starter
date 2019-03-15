@@ -37,7 +37,13 @@ class Pipes extends Phaser.GameObjects.Group {
    * @param {boolean} configuration.isOnCeiling - should our pipe be attached to the ceiling
    */
   create({ x, y, frame, isOnCeiling }) {
-    // We'll implement this later
+    // const pipe = super.create(x, y, "donuts", frame);
+    // this.scene.physics.world.enable(pipe);
+    // pipe.setScale(globals.scale);
+    // pipe.body.velocity.x = -300;
+    // pipe.flipY = isOnCeiling;
+    //
+    // return pipe;
   }
 
   /**
@@ -56,7 +62,13 @@ class Pipes extends Phaser.GameObjects.Group {
    * by our parent scene's update lifecycle method.
    */
   update() {
-    // We'll implement this later
+    // this.getChildren().forEach(pipe => {
+    //   if (Pipes.isPipeOffScreen(pipe)) {
+    //     if (pipe.active) {
+    //       this.remove(pipe);
+    //     }
+    //   }
+    // });
   }
 
   /**
@@ -88,7 +100,12 @@ class Pipes extends Phaser.GameObjects.Group {
         y = globals.height - pipeLength + globals.tileSize;
       }
 
-      // We'll finish implementing this later
+      // this.create({
+      //   x: globals.width + (globals.tileSize / 2) * globals.scale,
+      //   y,
+      //   frame: i === height ? 1 : 2,
+      //   isOnCeiling
+      // });
     }
   }
 
@@ -96,7 +113,14 @@ class Pipes extends Phaser.GameObjects.Group {
    * Build a pair of pipes, one on the the ceiling and one attached to the floor
    */
   buildPipePair() {
-    // We'll implement this later
+    // const topHeight = Phaser.Math.RND.between(
+    //   1,
+    //   globals.tilesTall - globals.pipeGapSize - 1
+    // );
+    // const bottomHeight = globals.tilesTall - globals.pipeGapSize - topHeight;
+    //
+    // this.buildPipe(topHeight, false);
+    // this.buildPipe(bottomHeight, true);
   }
 }
 

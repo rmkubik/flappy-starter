@@ -18,7 +18,13 @@ class MainScene extends Phaser.Scene {
    * This method is used to load and register assets into our game.
    */
   preload() {
-    // We'll implement this later
+    /**
+     * This loads our sprite sheet and assigns it to the key "donuts"
+     */
+    // this.load.spritesheet("donuts", donutSpriteSheet, {
+    //   frameWidth: globals.tileSize,
+    //   frameHeight: globals.tileSize
+    // });
   }
 
   /**
@@ -27,24 +33,50 @@ class MainScene extends Phaser.Scene {
    * It is used to initialize your game.
    */
   create() {
+    this.createPlayerInputs();
+
     /**
-     * Add a text Game Object to our Scene.
-     *
-     * arguments:
-     * - x location in pixels
-     * - y location in pixels
-     * - text to be displayed
-     *
-     * Phaser uses the top left of the screen as origin (0, 0).
+     * Create a donut instance, a Phaser Sprite or an image on the screen
      */
-    this.add.text(10, 10, "Flappy Donut");
+    // this.donut = new Donut({ scene: this, position: { x: 150, y: 100 } });
+
+    /**
+     * Create a Pipes instance, a Phaser Group or a grouping of similar game objects
+     */
+    // this.pipes = new Pipes({ scene: this });
+
+    /**
+     * Enable collisions between our donut and our pipes with the Arcade Physics plugin
+     */
+    // this.physics.add.collider(this.donut, this.pipes, (donut, pipe) => {
+    //   pipe.body.setGravityY(globals.gravity);
+    // });
+
+    /**
+     * Spawn pairs of pipes on a one second loop
+     */
+    // this.time.addEvent({
+    //   delay: 1000,
+    //   callback: this.pipes.buildPipePair,
+    //   callbackScope: this.pipes,
+    //   loop: true
+    // });
   }
 
   /**
    * Set up input handling events so our game can respond to player inputs.
    */
   createPlayerInputs() {
-    // We'll implement this later
+    /**
+     * Handle player input for controlling the Donut
+     */
+    // this.input.keyboard.on("keydown_SPACE", () => { this.donut.flap(); });
+    // this.input.on("pointerdown", () => { this.donut.flap(); });
+    //
+    /**
+     * Handle player input for spawning test pipes
+     */
+    // this.input.keyboard.on("keydown_ENTER", () => { console.log("keydown_ENTER"); });
   }
 
   /**
@@ -53,7 +85,11 @@ class MainScene extends Phaser.Scene {
    * It is called when the Scene runs an update step.
    */
   update() {
-    // We'll implement this later
+    /**
+     * Game objects don't have lifecycle events by default.
+     * We need to trigger our Pipes' update function explicitly.
+     */
+    // this.pipes.update();
   }
 }
 

@@ -42,13 +42,13 @@ The first task we need to achieve is getting this starter project up and running
 
 4. **Run our start command in your terminal to verify everything is set up correctly**
 
-   By this point your starter project should be correctly set up on your computer. In order to verify everything is working correctly, run the following command in your terminal from the project directoy.
+   By this point your starter project should be correctly set up on your computer. In order to verify everything is working correctly, run the following command in your terminal from the project directory.
 
    ```bash
    npm start
    ```
 
-   This should cause some text to appear in your terminal indicating the starter project is building. After a few seconds it should should you a URL that looks something like [http://localhost:1234](http://localhost:1234). If you navigate to this address in your browser of choice, you should see a black screen with the text "Flappy Donut".
+   This should cause some text to appear in your terminal indicating the starter project is building. After a few seconds it should should you a URL that looks something like [http://localhost:1234](http://localhost:1234). If you navigate to this address in your browser of choice, you should see a sky blue screen.
 
 ## Starter Project Architecture
 

@@ -19,23 +19,27 @@ class Donut extends Phaser.GameObjects.Sprite {
    */
   constructor({ scene, position }) {
     /**
-     * We need to call the Sprite constructor
-     *
-     * arguments:
-     * - the Phaser.Scene that owns this Sprite
-     * - x location in pixels
-     * - y location in pixels
-     * - the spritesheet asset to reference
-     * - the frame in the spritesheet to use
+     * We need to call the Sprite constructor we're extending
      */
     super(scene, position.x, position.y, "donuts", 0);
+    // scene.add.existing(this);
+    // this.setScale(globals.scale);
+
+    // scene.physics.world.enable(this);
+
+    /**
+     * Arcade physics Body functions
+     */
+    // this.body.setBounce(0.8);
+    // this.body.setCollideWorldBounds(true);
+    // this.body.setGravityY(globals.gravity);
   }
 
   /**
    * Tell our Donut to flap up higher into the air
    */
   flap() {
-    // We'll implement this later
+    // this.body.velocity.y -= 400;
   }
 }
 
