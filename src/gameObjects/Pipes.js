@@ -20,6 +20,8 @@ class Pipes extends Phaser.GameObjects.Group {
      * - the Phaser.Scene that owns this Group
      */
     super(scene);
+    scene.add.existing(this);
+    this.scene = scene;
   }
 
   /**
@@ -39,12 +41,12 @@ class Pipes extends Phaser.GameObjects.Group {
   }
 
   /**
-   * Checks if the provided pipe section off the bottom or side of the screen
+   * Checks if the provided pipe section's physics body is off the bottom or left side of the screen
    *
    * @param {Phaser.GameObjects.Sprite} pipe - the piece of pipe we're checking
    */
   static isPipeOffScreen(pipe) {
-    // We'll implement this later
+    return pipe.body.x < 0 || pipe.body.y > globals.height;
   }
 
   /**
@@ -64,7 +66,30 @@ class Pipes extends Phaser.GameObjects.Group {
    * @param {boolean} [isOnCeiling=false] - should our pipe be attached to the ceiling
    */
   buildPipe(height, isOnCeiling = false) {
-    // We'll implement this later
+    /**
+     * We want our pipe to be the specified height
+     */
+    for (let i = 1; i <= height; i += 1) {
+      /**
+       * How long will the pipe be after this section is
+       */
+      const pipeLength = globals.tileSize * globals.scale * i;
+
+      let y;
+      if (isOnCeiling) {
+        /**
+         * If the pipe is on the ceiling, its y location should be at the last pipe section
+         */
+        y = pipeLength - globals.tileSize;
+      } else {
+        /**
+         * If the pipe is on the floor, its y location needs to be calculated from the height of the entire window
+         */
+        y = globals.height - pipeLength + globals.tileSize;
+      }
+
+      // We'll finish implementing this later
+    }
   }
 
   /**
