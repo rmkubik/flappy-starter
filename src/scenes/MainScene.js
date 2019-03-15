@@ -70,13 +70,36 @@ class MainScene extends Phaser.Scene {
     /**
      * Handle player input for controlling the Donut
      */
-    // this.input.keyboard.on("keydown_SPACE", () => { this.donut.flap(); });
-    // this.input.on("pointerdown", () => { this.donut.flap(); });
+    // this.input.keyboard.on("keydown_SPACE", () => {
+    //   this.donut.flap();
+    // });
+    // this.input.on("pointerdown", () => {
+    //   this.donut.flap();
+    // });
     //
     /**
-     * Handle player input for spawning test pipes
+     * Version 1: Spawn a single pipe
      */
-    // this.input.keyboard.on("keydown_ENTER", () => { console.log("keydown_ENTER"); });
+    // this.input.keyboard.on("keydown_ENTER", () => {
+    //   this.pipes.create({
+    //     x: 100,
+    //     y: 100,
+    //     frame: 1
+    //   });
+    // });
+    /**
+     * Version 2: Spawn a pair of pipes
+     */
+    // this.input.keyboard.on("keydown_ENTER", () => {
+    //   this.pipes.buildPipe(3);
+    //   this.pipes.buildPipe(3, true);
+    // });
+    /**
+     * Version 3: Spawn a randomly sized pair of pipes
+     */
+    // this.input.keyboard.on("keydown_ENTER", () => {
+    //   this.pipes.buildPipePair();
+    // });
   }
 
   /**
