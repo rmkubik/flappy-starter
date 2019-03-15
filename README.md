@@ -56,6 +56,8 @@ Let's explore the basic setup of our Phaser starter project.
 
 This is a map of all the files in our starter project that are relevant to this workshop. The files that have been omitted from this diagram are related to various developer tools.
 
+Each file in the tree below has comments inside explaining its various functions.
+
 ```
 flappy-starter
 │
