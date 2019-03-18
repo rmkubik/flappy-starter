@@ -10,17 +10,7 @@ import globals from "../globals";
  * The Sprite can have a physics body, animations, and more.
  */
 class Donut extends Phaser.GameObjects.Sprite {
-  /**
-   * @param {object} configuration
-   * @param {Phaser.Scene} configuration.scene - the Phaser.Scene that owns this Sprite
-   * @param {object} configuration.position
-   * @param {number} configuration.position.x - coordinate in pixels
-   * @param {number} configuration.position.y - coordinate in pixels
-   */
   constructor({ scene, position }) {
-    /**
-     * We need to call the Sprite constructor we're extending
-     */
     super(scene, position.x, position.y, "donuts", 0);
     // scene.add.existing(this);
     // this.setScale(globals.scale);
