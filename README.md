@@ -14,6 +14,8 @@ The first task we need to achieve is getting this starter project up and running
 
    Right now, this project exists hosted on Github. In order for you to use the project you must get a copy of it onto your computer. This process is called a `clone` and it is [well documented by Github](https://help.github.com/en/articles/cloning-a-repository). They provide instructions on how to clone this repository via the Command Line or Github Desktop.
 
+   This workshop assumes you use the `master` branch of the repository. There is a branch called `commented` that is better documented. These were removed from the workshop portion as they could be distracting.
+
 2. **Ensure you have Node.js and NPM installed**
 
    We will be relying on the Node.js environment for this project. Additionally, we'll be using Node Package Manager (NPM) to install the dependencies (code written by other developers) of our project. NPM provides [instructions on how to install Node.js and NPM](https://www.npmjs.com/get-npm).
